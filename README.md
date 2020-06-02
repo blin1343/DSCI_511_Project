@@ -1,7 +1,7 @@
-###DSCI_511_Project
-#People's Interests During COVID19 Lockdown: A Review of Search Trends 
+<h3>DSCI_511_Project<h/3>
+<h1>People's Interests During COVID19 Lockdown: A Review of Search Trends</h1>
 
-<b>clone the repo to your local machine using the following line of code:</b>
+<b>Clone the current repository to your local machine using the following line of code:</b>
 
 <pre>
 git clone https://github.com/Pawan429/DSCI_511_Project.git
