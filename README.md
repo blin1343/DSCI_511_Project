@@ -3,7 +3,9 @@
 
 clone the repo to your local machine using the following line of code:
 
-''git clone https://github.com/Pawan429/DSCI_511_Project.git''
+<pre>
+git clone https://github.com/Pawan429/DSCI_511_Project.gita
+</pre>
 
 
 Guidelines
