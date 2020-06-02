@@ -7,8 +7,8 @@
 git clone https://github.com/Pawan429/DSCI_511_Project.git
 </pre>
 
-<b>Packages required</b>.  </br>
-Install all relevant packages using the following code in the Command Prompt.  </br>
+<b>Packages required</b>.  <br/>
+Install all relevant packages using the following code in the Command Prompt.  <br/>
 <pre>
 $ pip install -r requirements.txt
 </pre>
