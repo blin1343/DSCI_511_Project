@@ -24,7 +24,8 @@ The creation of our dataset began with a thorough discussion of what type of dat
 <br>
 These module(s) allowed us to retrieve data from Google Search Trends and Bing Search Trends, showing data for search queries that people have made by time periods, regions, topics, etc. To further enrich the dataset related queries were brought in from Google Search API and Bing Search API, to create a more holistic view of related searchtrends across the internet during the quarantine.
 <br>
-<img src = '' >
+<h3>Input Data is a JSON Dictionary</h3>
+<img src = 'input_format.png' >
 <img src = 'output_format.png'>
 <br>
 <h3>Interacting with the Final Json</h3><br>
@@ -51,9 +52,9 @@ def related_queries(Topic_name) :
 </pre>
 <br>
 <h3>Challenges faced during the project</h3><br>
-<b> Google API (Max 5 keywords):</b> The Google API accepts a keword_list of max 5 elements. Some of our Topics that were extracted from the Business Insider Article had more than 5 keywords. So we created a function to iterate over a list in batches of 5 & return a list of "lists with 5 elements or less"
+<b> Google API (Max 5 keywords):</b> The Google API accepts a keyword_list of max 5 elements. Some of our Topics that were extracted from the Business Insider Article had more than 5 keywords. So we created a function to iterate over a list in batches of 5 & return a list of "lists with 5 elements or less".
 <br>
-<b> Bing API (Free tier):</b> 3 calls per second and 1000 calls per month. Anything above the said usade requires a new Subscription key<br>
+<b> Bing API (Free tier):</b> 3 calls per second and 1000 calls per month. Anything above the said usage requires a new Subscription key.<br>
 <b>API interfacing Errors : </b> made use of mutiple try & except statements to circumvent multiple 400 and 401 responses that might arise when intercating with both the APIs.<br>
 <b>Parsing the Bing response :</b> made use of the jsonpath-ng library to eaily parse the json response from hte Bing API.
 <br>
