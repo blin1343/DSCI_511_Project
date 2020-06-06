@@ -35,13 +35,12 @@ These module(s) allowed us to retrieve data from Google Search Trends and Bing S
 def get_topic_names(data):
     return([i for i in data])
 </pre>
-<br>
 <pre>
 # FUNCTION THAT RETURNS A DATAFRAME OF TIMESERIES DATA FOR A GIVEN TOPIC NAME
 def interest_over_time(Topic_name):    
     df = pd.read_json(data[Topic_name]["interest_over_time"], orient='table')
     return(df)
-</pre><br>
+</pre>
 <pre>
 #FUNCTION THAT RETURNS TWO LISTS OF RELATED QUEIRES IN THE ORDER GOOGLE, BING
 def related_queries(Topic_name) :
