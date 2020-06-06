@@ -23,3 +23,7 @@ The creation of our dataset began with a thorough discussion of what type of dat
 <pre>pip install azure-cognitiveservices-search-websearch</pre>
 <br>
 These module(s) allowed us to retrieve data from Google Search Trends and Bing Search Trends, showing data for search queries that people have made by time periods, regions, topics, etc. To further enrich the dataset related queries were brought in from Google Search API and Bing Search API, to create a more holistic view of related searchtrends across the internet during the quarantine.
+
+<img srec = 'output_format.png'>
+
+
