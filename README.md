@@ -27,6 +27,33 @@ These module(s) allowed us to retrieve data from Google Search Trends and Bing S
 <img src = 'output_format.png'>
 <br>
 <h3>Interacting with the Final Json</h3><br>
+
+
+<pre>
+# FUNCTION TO LIST ALL THE TOPIC NAMES
+
+def get_topic_names(data):
+    return([i for i in data])
+</pre>
+<br>
+<pre>
+# FUNCTION THAT RETURNS A DATAFRAME OF TIMESERIES DATA FOR A GIVEN TOPIC NAME
+def interest_over_time(Topic_name):
+    
+    df = pd.read_json(data[Topic_name]["interest_over_time"], orient='table')
+
+    return(df)
+</pre>
+<br>
+<pre>
+#FUNCTION THAT RETURNS TWO LISTS OF RELATED QUEIRES IN THE ORDER GOOGLE, BING
+def related_queries(Topic_name) :
+    x = data[Topic_name]["related_queries"]
+    Google = x['Google']
+    Bing = x['Bing']
+    return(Google, Bing)
+</pre>
+<br>
 <h3>Challenges faced during the project</h3><br>
 <b> Google API (Max 5 keywords):</b> The Google API accepts a keword_list of max 5 elements. Some of our Topics that were extracted from the Business Insider Article had more than 5 keywords. So we created a function to iterate over a list in batches of 5 & return a list of "lists with 5 elements or less"
 <br>
