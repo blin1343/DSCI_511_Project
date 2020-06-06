@@ -51,7 +51,7 @@ def related_queries(Topic_name) :
     return(Google, Bing)
 </pre>
 <br>
-<h3>Challenges faced during the project</h3><br>
+<h3>Challenges faced during the project</h3>
 <b> Google API (Max 5 keywords):</b> The Google API accepts a keyword_list of max 5 elements. Some of our Topics that were extracted from the Business Insider Article had more than 5 keywords. So we created a function to iterate over a list in batches of 5 & return a list of "lists with 5 elements or less".
 <br>
 <b> Bing API (Free tier):</b> 3 calls per second and 1000 calls per month. Anything above the said usage requires a new Subscription key.<br>
